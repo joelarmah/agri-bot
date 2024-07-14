@@ -1,24 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+// import RosConnection from "./components/RosConnection";
+import { useState } from "react";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "./components/Header";
+import RosConnection from "./components/RosConnection";
+import { Col, Row } from "reactstrap";
+import RobotCamera from "./components/RobotCamera";
+import RobotMapView from "./components/RobotMapView";
+import RobotControl from "./components/RobotControl";
 
 function App() {
+
+  const [url] = useState("localhost:9090");
+  const [connectionStatus, setConnectionStatus] = useState("");
+
+  const handleConnectionStatusChange = (status) => {
+    setConnectionStatus(status);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <RosConnection
+        url={url}
+        onConnectionStatusChange={handleConnectionStatusChange}>
+        <Header url={url} connectionStatus={connectionStatus} />
+
+        <Row className="mb-4">
+          <Col xl={7}>
+            <RobotCamera />
+          </Col>
+          <Col xl={5}>
+            <RobotMapView />
+          </Col>
+        </Row>
+
+        <Row className="mb-4">
+          <Col xl={7}>
+            <RobotControl />
+          </Col>
+          <Col xl={5}>
+          </Col>
+        </Row>
+
+      </RosConnection>
+    </>
   );
 }
 
