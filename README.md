@@ -10,9 +10,7 @@ Welcome to the AgriBot Control Dashboard built with React.js and ROS Lib.
 
 - **Video:** Live video feed broadcasted by the robot.
 - **Map:** Displays the real-time position of the robot on an interactive map.
-- **Velocity:** Control Angular and Linear velocity for precise robot movement.
-- **Joy Stick:** Intuitive control mechanism for robot navigation.
-- **Navigation Menu:** Save and navigate to predefined locations with ease.
+- **Navigation:** Intuitive control mechanism for robot navigation.
 
 ### Libraries
 
@@ -51,10 +49,6 @@ Project requires Node.js version 14+.
 ```bash
 npm start
 ```
-
-## Application configuration
-
-## Preview
 
 ## Contributing
 If you'd like to contribute to this project, please follow our [contribution guidelines](CONTRIBUTING.md).
