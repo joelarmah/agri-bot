@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# AgriBot Control Dashboard | React.js and Bootstrap
+
+## Application Introduction
+
+![Robot Control Console Dashboard](screenshots/home.png?raw=true)
+
+Welcome to the AgriBot Control Dashboard built with React.js and ROS Lib. 
+
+### Features
+
+- **Video:** Live video feed broadcasted by the robot.
+- **Map:** Displays the real-time position of the robot on an interactive map.
+- **Velocity:** Control Angular and Linear velocity for precise robot movement.
+- **Joy Stick:** Intuitive control mechanism for robot navigation.
+- **Navigation Menu:** Save and navigate to predefined locations with ease.
+
+### Libraries
+
+- **ROSlib.js:** A JavaScript library for interacting with ROS, enabling communication between the web application and the robot.
+- **ROS2D:** A library for visualizing 2D maps and robot positions within the Robot Operating System (ROS), enhancing the map visualization capabilities.
+
+## Getting Started
+
+### Prerequisites
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project requires Node.js version 14+.
 
-## Available Scripts
+### Installation
 
-In the project directory, you can run:
+1. Clone the repository:
 
-### `npm start`
+    ```bash
+    git clone https://github.com/joelarmah/agri-bot
+    ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Navigate to the project directory:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    ```bash
+    cd agri-bot
+    ```
 
-### `npm test`
+3. Install npm packages:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    ```bash
+    npm install
+    ```
 
-### `npm run build`
+### Start application
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Application configuration
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Preview
 
-### `npm run eject`
+## Contributing
+If you'd like to contribute to this project, please follow our [contribution guidelines](CONTRIBUTING.md).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributors
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Acknowledgments
+I want to express our gratitude to the open-source community for their valuable contributions and resources that have made this project possible.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

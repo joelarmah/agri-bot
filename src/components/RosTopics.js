@@ -4,6 +4,7 @@ import ROSLIB from "roslib";
 const RosTopics = ({ ros, topicName, messageType }) => {
 
     const [message, setMessage] = useState("");
+    const [topic, setTopics] = useState([]);
 
     useEffect(() => {
         if (ros) {
