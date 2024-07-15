@@ -1,6 +1,10 @@
 import { Input, InputGroup, InputGroupText } from "reactstrap";
 
-const ConfigureUrl = ({ url, setUrl }) => {
+const ConfigureUrl = ({ url }) => {
+
+  const onUrlChanged = (url) => {
+    console.log(url);
+  }
 
   return (
     <InputGroup>
@@ -8,7 +12,7 @@ const ConfigureUrl = ({ url, setUrl }) => {
       <Input
         placeholder="Enter ROS Bridge URL"
         value={url}
-        onChange={(e) => setUrl(e.target.value)}
+        onChange={(e) => onUrlChanged(e.target.value)}
       />
     </InputGroup>
   );

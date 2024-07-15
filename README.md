@@ -1,8 +1,8 @@
 # AgriBot Control Dashboard | React.js and Bootstrap
 
-## Application Introduction
+## Introduction
 
-![Robot Control Console Dashboard](screenshots/home.png?raw=true)
+![AgriBot Control Dashboard](screenshots/home.png?raw=true)
 
 Welcome to the AgriBot Control Dashboard built with React.js and ROS Lib. 
 
