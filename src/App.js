@@ -53,8 +53,6 @@ function App() {
         </Row>
         </Container>
 
-      
-
       </RosConnection>
     </>
   );
